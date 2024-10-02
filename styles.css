@@ -228,6 +228,17 @@ section h2::after {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+/* New styles for certificate categories */
+.certificate-category {
+    margin-bottom: 40px; /* Space between certificate sections */
+}
+
+.certificate-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #000000; /* Style to differentiate section headings */
+    text-align: left;
+}
 
 /* Form Styles */
 form {
