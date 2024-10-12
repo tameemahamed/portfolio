@@ -4,8 +4,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #f5f5f5;
+    background: linear-gradient(180deg, #eeecec,#cbcbd6);
     color: #333;
+    min-width: 1024px;
 }
 
 h1,
@@ -17,23 +18,25 @@ p {
 
 .container {
     width: 90%;
-    max-width: 70%;
     margin: 0 auto;
     padding: 20px 0;
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #6b73ff, #000dff);
+    background: linear-gradient(75deg, #000dff,#8f94f8);
     color: #fff;
     text-align: center;
-    padding: 60px 20px;
+    padding: 20px 10px;
+    margin-top: 60px;
+    width: 100%;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .profile-photo {
@@ -127,7 +130,7 @@ section h2::after {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(293px, 1fr));
     gap: 20px;
 }
 
@@ -136,7 +139,9 @@ section h2::after {
     padding: 25px;
     border: 1px solid #ddd;
     transition: box-shadow 0.3s ease;
-    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
 }
 
 .project:hover {
@@ -159,8 +164,10 @@ section h2::after {
     color: #fff;
     background: #6b73ff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background 0.3s ease;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 .project .btn:hover {
@@ -197,14 +204,15 @@ section h2::after {
 /* Certificates Grid */
 .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(293.5px, 1fr));
     gap: 20px;
 }
 
 .certificate {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
+    background: #f6f5f5;
+    padding: 20px 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
     transition: box-shadow 0.3s ease;
     text-align: center;
 }
@@ -294,29 +302,19 @@ nav {
     position: fixed;
     left: 0;
     top: 0;
-    width: 200px; /* Adjust width as needed */
-    height: 100%; /* Occupy full height of the viewport */
+    width: 100%; 
+    height: 60px; 
     background: #333;
-    overflow-y: auto; /* Allow scrolling if the content exceeds the navbar height */
     color: #333;
-    font-size: 18px;
-    border-radius: 5px;
     transition: all 0.3s ease;
-    text-align: left;
+    text-align: center;
+    z-index: 1000;
 }
 
 nav ul {
-    padding: 20px 0; /* Add padding to the top of the nav */
-    
-}
-
-nav ul li {
-    margin: 0 0;
-}
-
-/* Center content to adjust for the navbar width */
-.container {
-    margin-left: 220px; /* Adjust as per the navbar width */
+    padding: 0px 0px; /* Add padding to the top of the nav */
+    display: flex;
+    position: relative;
 }
 
 /* Smooth scrolling for navigation links */
@@ -324,7 +322,6 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    padding: 15px 10px;
     display: block;
     transition: color 0.3s ease;
 }
@@ -342,7 +339,7 @@ nav ul li a:hover {
 .timeline::before {
     content: '';
     position: absolute;
-    left: 55%;
+    left: 50%;
     top: 0;
     bottom: 0;
     width: 4px;
@@ -351,7 +348,7 @@ nav ul li a:hover {
 
 .timeline-item {
     position: relative;
-    width: 55%;
+    width: 50%;
     padding: 20px 30px;
     box-sizing: border-box;
 }
@@ -362,7 +359,7 @@ nav ul li a:hover {
 }
 
 .timeline-item:nth-child(even) {
-    left: 55%;
+    left: 50%;
     text-align: left;
 }
 
