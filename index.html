@@ -1,394 +1,759 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- left on line 120 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Tameem Ahamed</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <meta name="description" content="Learn more about Tameem Ahamed, his background, expertise, and contributions. Find out why Tameem Ahamed is a notable figure in his field.">
-    <meta name="keywords" content="Tameem Ahamed, Tamim Ahmed, biography, background, expertise, contributions, notable figure">
-    <meta name="author" content="Tameem Ahamed">
-    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="your-photo.jpg" alt="Tameem Ahamed" class="profile-photo">
-                <div class="header-text">
-                    <h1>Tameem Ahamed</h1>
-                    <p>Competitive Programming | Data Analysis | Cybersecurity</p>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img class="my-img" src="my-photo.jpg" alt="avatar" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Tameem Ahamed">Tameem Ahamed</h1>
+                    <p class="title" style="margin-bottom: 2%;">Full-stack Web Developer</p>
+                    <p class="title" style="margin-bottom: 2%;">Competitive Programmer</p>
                 </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
             </div>
-        </div>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#ProgrammingSkills">Programming Skills</a></li>
-            <li><a href="#DevelopmentSkills">Development Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
 
-    <section id="profile" class="container">
-        <h2>Profile</h2>
-        <p>
-            I'm Tameem Ahamed, an enthusiastic learner and explorer with a passion for Competitive Programming,
-             Web Development, Database Management, Data Analysis and Cybersecurity. This portfolio is a glimpse 
-             into my journey of discovery, where I turn curiosity into projects that challenge and inspire me. 
-             Whether it's Competitive Programming or Web Development, I'm constantly growing and evolving. Take 
-             a look around—there's more to come as I continue to explore new ideas and 
-             create something exciting.
-        </p>
-    </section>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
 
-    <section id="ProgrammingSkills" class="container">
-        <h2>Programming Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">C</div>
-            <div class="skill">C++</div>
-            <div class="skill">C#</div>
-            <div class="skill">Java</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">PHP</div>
-        </div>
-    </section>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
 
-    <section id="DevelopmentSkills" class="container">
-        <h2>Development Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">AngularJS</div>
-            <div class="skill">SQL</div>
-            <div class="skill">SpringBoot</div>
-        </div>
-    </section>
+                            <a href="mailto:ahamedtameem00@gmail.com" class="contact-link">ahamedtameem00@gmail.com</a>
+                        </div>
+                    </li>
 
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <div class="des">
-                    <h3>Curve Fitting Visualizer</h3>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+8801581882268" class="contact-link">+880 1581-882268</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="2002-01-08">January 08, 2002</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Chittagong, Bangladesh</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://github.com/tameemahamed" target="_blank" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://linkedin.com/in/tameem-ahamed-762585227" target="_blank" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://wa.me/message/CGLL55IACQHIG1?src=qr" target="_blank" class="social-link"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                    <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.instagram.com/tameem_ahamed/" target="_blank" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://facebook.com/tameem.ahamed.501" target="_blank" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
                     <p>
-                        The Curve Fitting Visualization Tool is an interactive, web-based application designed 
-                        to simplify the process of analyzing and visualizing relationships between variables.
-                        It provides an intuitive platform for users to upload datasets, fit regression models,
-                        and explore mathematical concepts through real-time visualizations.
+                        I'm Tameem Ahamed, an enthusiastic learner and explorer with a passion for Competitive Programming, Web Development, Database Management, Data Analysis, and Cybersecurity. My journey is driven by curiosity and a desire to solve complex problems, pushing me to continuously learn and refine my skills.
                     </p>
-                </div>
-                <div>
-                    <a href="https://tameemahamed.github.io/CurveFittingVisualizer/" class="btn" target = "_blank">View Site</a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="des">
-                    <h3>Resume Builder</h3>
                     <p>
-                        Resume Builder is a user-friendly application designed to streamline the process of
-                        creating professional, personalized resumes. This tool offers a range of customizable
-                        templates and an intuitive interface, allowing users to effortlessly input their work
-                        experience, education, skills, and other relevant details. The application provides
-                        real-time previews and suggestions to enhance resume quality and ensure compliance
-                        with industry standards. Additionally, Resume Builder supports various file formats
-                        for easy export and sharing, empowering users to craft compelling resumes 
-                        that stand out to potential employers.
+                        This portfolio is a reflection of my passion for turning ideas into reality. Whether it's optimizing algorithms in Competitive Programming, designing dynamic web applications, managing data efficiently, or diving into the world of Cybersecurity, I embrace every challenge as an opportunity to grow. Each project represents a step forward in my learning journey, and I'm always eager to explore new concepts, experiment with innovative solutions, and contribute meaningfully to the tech community. Stay tuned—there’s always something new on the horizon!
                     </p>
-                </div>
-                <div>
-                    <a href="https://tameemahamed.github.io/resume-builder/" class="btn" target = "_blank">View Site</a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="des">
-                    <h3>ExChangePlates</h3>
-                    <p>
-                        ExChangePlates is a
-                        community-driven project developed
-                        using Java NetBeans, aimed at bridging
-                        the gap between surplus food and those in
-                        need. Individuals can participate by
-                        donating excess food items, and the platform
-                        facilitates the seamless collection and
-                        distribution of these donations by NGOs
-                        to impoverished communities. Through a user-friendly
-                        interface, donors can easily register
-                        and list available food items for donation,
-                        while NGOs can efficiently coordinate pickups
-                        and deliveries. This project embodies the spirit
-                        of generosity and collaboration, harnessing technology
-                        to make a meaningful impact on hunger relief efforts.
-                    </p>
+                </section>
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.ibb.co.com/0jtwnBzv/pic.jpg" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Commpetitive Programming</h4>
+                                <p class="service-item-text">Crafting efficient algorithms to tackle challenging problems.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web development</h4>
+                                <p class="service-item-text">Creating dynamic and interactive web solutions with modern technologies.</p>
+                            </div>
+                        </li> 
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.ibb.co.com/C5B79RMr/Data-analysis-hero.jpg" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Data Analysis</h4>
+                                <p class="service-item-text">Extracting meaningful insights from raw data through statistical techniques, visualization, and predictive modeling to drive smarter decisions.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/xjLdzYxZ/icon-app.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+                                <p class="service-item-text">Building intuitive and responsive applications for seamless user experiences.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.ibb.co.com/hR0pbGN9/hakarman.jpg" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Cybersecurity</h4>
+                                <p class="service-item-text">Safeguarding digital assets through proactive security measures.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+                
+<!-- in case of adding any testimonial in future :) -->
+                <!-- <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Testimonials</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel Lewis</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>Richard was hired to create a corporate identity. It's modern, clean and with a beautiful design that got a lot of praises from colleagues and visitors. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/DwY0yHtx/avatar-2.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica Miller</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>Working with Richard has been an absolute pleasure. I was impressed with his attention to detail, his web design skills and his professional approach to our timelines and processes.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/fRFWhX9F/avatar-3.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily Evans</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>I couldn't be happier with the website that Richard created for us. His attention to detail and creativity is unmatched. Our clients frequently compliment the design, and it has significantly improved our brand image.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/zXv1Xv81/avatar-4.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry Williams</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>I was overwhelmed with the thought of redesigning my online store, but Richard made the process seamless. The site is not only visually appealing but also optimized for conversions. I've seen a 50% increase in traffic since the launch!</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section> -->
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
+                        </div>
+
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+                            <time datetime="2023-06-14">14 June, 2023</time>
+
+                            <div class="modal-text" data-modal-text>
+                                <p>Richard was hired to create a corporate identity. It's modern, clean and with a beautiful design that got a lot of praises from colleagues and visitors. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
 
-                <div>
-                    <a href="https://github.com/tameemahamed/ExChangePlates1/tree/master" target="_blank"
-                        class="btn">View Project Repository</a>
-                </div>
+                <!--  <section class="clients">
+                    <h3 class="h3 clients-title">Clients</h3>
 
-            </div>
-            <div class="project">
-                <div class="des">
-                    <h3>Binary Land(Remake)</h3>
-                    <p>
-                        Binary Land Remake, crafted in Java NetBeans,
-                        reimagines the beloved classic with sleek graphics
-                        and fluid controls. Maneuver two characters
-                        through challenging mazes, dodging obstacles
-                        and foes to reach their exits. Its modern
-                        twist breathes new life into a timeless favorite,
-                        delivering excitement and nostalgia in equal measure.
-                    </p>
-                </div>
-                <div>
-                    <a href="https://github.com/tameemahamed/BinaryLand" target="_blank" class="btn">View Project
-                        Repository</a>
-                </div>
+                    <ul class="clients-list has-scrollbar">
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/YqfKyG66/logo-1-color.png" alt="logo"></a>
+                        </li>
 
-            </div>
-            <div class="project">
-                <div class="des">
-                    <h3>Breast Cancer Detection</h3>
-                    <p>
-                        Breast cancer is a leading cause of cancer deaths among
-                        women worldwide, requiring early and accurate detection for
-                        effective treatment. Traditional diagnostic methods can be
-                        slow, inconsistent, and prone to human error, leading to
-                        delayed and unreliable diagnoses.
-                        This project aims to improve breast cancer detection by
-                        leveraging artificial intelligence (AI) to enhance diagnostic
-                        accuracy and speed, addressing the limitations of traditional
-                        methods.
-                    </p>
-                </div>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/fWm6JtgG/logo-2-color.png" alt="logo"></a>
+                        </li>
 
-                <div>
-                    <a href="#" class="btn">View Project Repository</a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="des">
-                    <h3>Bank Management System</h3>
-                    <p>
-                        The Simple Bank Management
-                        System, developed with Java NetBeans,
-                        offers basic banking functionalities.
-                        Users can create accounts, deposit and
-                        withdraw funds, and check their balance
-                        seamlessly through an intuitive interface.
-                        With features for account management and
-                        transaction tracking, it ensures efficient
-                        handling of banking operations. This system
-                        provides a reliable solution for
-                        small-scale banking needs, facilitating
-                        easy access to financial services.
-                    </p>
-                </div>
-                <div>
-                    <a href="https://github.com/tameemahamed/Bank-Management-System/tree/main" class="btn">View Project Repository</a>
-                </div>
-            </div>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/Bb07xpwd/logo-3-color.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/hv1yMmkh/logo-4-color.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/ry1P86Dc/logo-5-color.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/SsWDN8NV/logo-6-color.png" alt="logo"></a>
+                        </li>
+                    </ul> 
+                </section>-->
+
+            </article>
+            
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+ 
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">International Islamic University Chittagong</h4>
+                            <span>B. Sc. in Computer Science and Engineering</span>
+                            <p class="timeline-text">2021 - Present</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Omargoni M.E.S. College</h4>
+                            <span>Higher Secondary School Certificate</span>
+                            <p class="timeline-text">2018 - 2020</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Kattali Nurul Hoq Chowdhury High School</h4>
+                            <span>Secondary School Certificate</span>
+                            <p class="timeline-text">2016 - 2018</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">IIUC Computer Club</h4>
+                            <span>Assistant Competitive Programming Secretary</span>
+                            <p class="timeline-text">Autumn 2024 - Present</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">IIUC Competitive Programming Society</h4>
+                            <span>Trainer</span>
+                            <p class="timeline-text">Autumn 2023</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">My Skills</h3>
+
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Backend Web Development</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Frontend Web Development</h5>
+                                <data value="60">60%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 60%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Data Analysis</h5>
+                                <data value="75">75%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 75%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Cybersecurity</h5>
+                                <data value="40">40%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 40%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Mobile Apps Development</h5>
+                                <data value="40">40%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 40%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+<!-- will see ya later -->
+            <article class="portfolio " data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <ul class="blog-posts-list">
+                        <li class="blog-post-item">
+                            <div class="blog-content"><p class="blog-text">Will be updated soon.....</p></div>
+                        </li>
+                    </ul>
+                    <ul class="filter-list">
+                        <!-- <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                        <li class="filter-item"><button data-filter-btn>Web Design</button></li>
+                        <li class="filter-item"><button data-filter-btn>Applications</button></li>
+                        <li class="filter-item"><button data-filter-btn>Web Development</button></li> -->
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select " data-select>
+                            <div class="select-value" data-select-value>Select Category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <!-- <ul class="select-list">
+                            <li class="select-item"><button data-select-item>All</button></li>
+                            <li class="select-item"><button data-select-item>Web Design</button></li>
+                            <li class="select-item"><button data-select-item>Applications</button></li>
+                            <li class="select-item"><button data-select-item>Web Development</button></li>
+                        </ul> -->
+                    </div>
+
+                    <ul class="project-list">
+                        <!-- <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/qRHpHMyd/project-1.jpg" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Finance</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/bNrcM2Wt/project-2.png" alt="orizon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Orizon</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/jSJVqYsq/project-3.jpg" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Fundo</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/dtpXxNGb/project-4.png" alt="brawlhalla" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Brawlhalla</h3>
+                                <p class="project-category">Applications</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/43T0JKLw/project-5.png" alt="dsm." loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">DSM.</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/qR1DX1kZ/project-6.png" alt="metaspark" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Metaspark</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/Kj4q9tjc/project-7.png" alt="summary" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Summary</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/rw2j4B1w/project-8.jpg" alt="task manager" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Task Manager</h3>
+                                <p class="project-category">Applications</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/7LxNsSQv/project-9.png" alt="arrival" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Arrival</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li> -->
+                    </ul>
+                </section>
+            </article>
+
+            <article class="blog " data-page="blog">
+                <header>
+                    <h2 class="h2 article-title">Blog</h2>
+                </header>
+
+                <section class="blog-posts">
+                    <ul class="blog-posts-list">
+                        <li class="blog-post-item">
+                            <div class="blog-content"><p class="blog-text">Will be updated soon.....</p></div>
+                        </li>
+                        <!-- <li class="blog-post-item">
+                            <a href="#">
+                                    <figure class="blog-banner-box">
+                                        <img src="https://i.postimg.cc/DysCZrWs/blog-1.jpg" alt="Design conferences in 2024" loading="lazy">
+                                    </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-02-23">Feb 23, 2024</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Design conferences in 2024</h3>
+                                    <p class="blog-text">In 2024, several exciting design conferences are set to take place, offering opportunities for professionals and enthusiasts to connect, learn, and share innovative ideas.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/QC7qFDMs/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                                </figure>
+
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-01-29">Jan 29, 2024</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                                    <p class="blog-text">When it comes to typography, choosing the right font is essential for effective design. In this article, I'll bring a brief overview of some of the best fonts that every designer should consider incorporating into their toolkit.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/W1T71QcL/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-12-20">Dec 20, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+                                    <p class="blog-text">Hello, my friends. In this Design Digest, I'll show you a curated collection of the latest trends, insights, and innovations in the design world. This edition highlights key themes and discussions that are shaping the future of design.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/2S0n8yxh/blog-4.jpg" alt="2023 UI interactions" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-11-29">Nov 29, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">2023 UI interactions</h3>
+                                    <p class="blog-text">As we move into 2024, 2023 was marked by the rapidly evolution of the landscape of UI interactions, driven by advancements in technology and user expectations. Dive with me in this text to see the main areas changed in this year.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/YCCmVkw9/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-11-12">Nov 12, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                                    <p class="blog-text">In the realm of design, spacing is often an overlooked yet crucial element that can significantly impact the overall aesthetic and functionality of a composition. This post will emphasize the importance of white space, margins, and padding in creating visually appealing and effective designs.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/zBCBvP16/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-10-20">Oct 20, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+                                    <p class="blog-text">Hi, my friends. In this Design Digest I'll focus in the tools and resources that we use daily in our projects. Also, I'll include examples of software recommendations, online courses, and design communities that foster collaboration and learning.</p>
+                                </div>
+                            </a>
+                        </li> -->
+                    </ul>
+                </section>
+            </article>
+
+            <article class="contact " data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                         <iframe width="720" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Chittagong,%20Bangladesh+(My%20Business%20Name)&amp;t=k&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form id="contactForm" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="entry.77494768" class="form-input" placeholder="Full name" required data-form-input>
+                            <input type="email" name="entry.1311410395" class="form-input" placeholder="Email Address" required data-form-input>
+                        </div>
+
+                        <textarea name="entry.1126869933" class="form-input" placeholder="Your Message" required data-form-input=""></textarea>
+
+                        <button class="form-btn" type="submit">
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
         </div>
-    </section>
+    </main>
 
-    <section id="education" class="container">
-        <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content" style="text-align: left;">
-                    <h3>Bachelor of Science in Computer Science & Engineering</h3>
-                    <p>International Islamic University Chittagong, 2021 - Present</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>HSC</h3>
-                    <p>Omargoni M.E.S. College, 2020</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>SSC</h3>
-                    <p>Kattali Nurul Hoq Chowdhury High School, 2018</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <script src="main.js"></script>
 
-    <section id="certificates" class="container">
-        <h2>Certificates</h2>
-    
-        <!-- Google Data Analytics Certificates Section -->
-        <div class="certificate-category">
-            <h3 style="font-size: 1.5rem;">Google Data Analytics Professional Certificates</h3>
-            <div class="certificates-grid">
-                <div class="certificate">
-                    <img src="Certificates/GoogleDataAnalysis/GoogleDataAnalysis7.jpeg" alt="Certificate 1" class="certificate-photo">
-                    <h3>Data Analysis with R Programming</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-                <div class="certificate">
-                    <img src="Certificates/GoogleDataAnalysis/GoogleDataAnalysis6.jpg" alt="Certificate 1" class="certificate-photo">
-                    <h3>Share Data Through the Art of Visualization</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-                <div class="certificate">
-                    <img src="Certificates/GoogleDataAnalysis/GoogleDataAnalysis5.jpg" alt="Certificate 1" class="certificate-photo">
-                    <h3>Analyze Data to Answer Questions</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-                <div class="certificate">
-                    <img src="Certificates/GoogleDataAnalysis/GoogleDataAnalysis4.jpg" alt="Certificate 1" class="certificate-photo">
-                    <h3>Process Data from Dirty to Clean</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-                <div class="certificate">
-                    <img src="Certificates/GoogleDataAnalysis/GoogleDataAnalysis3.jpg" alt="Certificate 1" class="certificate-photo">
-                    <h3>Prepare Data for Exploration</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-                <div class="certificate">
-                    <img src="Certificates/GoogleDataAnalysis/GoogleDataAnalysis2.jpeg" alt="Certificate 2" class="certificate-photo">
-                    <h3>Ask Questions to Make Data-Driven Decisions</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-                <div class="certificate">
-                    <img src="Certificates/GoogleDataAnalysis/GoogleDataAnalysis1.jpeg" alt="Certificate 1" class="certificate-photo">
-                    <h3>Foundations: Data, Data, Everywhere</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-            </div>
-        </div>
-    
-        <!-- IBM Cybersecurity Certificates Section -->
-        <div class="certificate-category">
-            <h3 style="font-size: 1.5rem;">IBM and ISC2 Cybersecurity Specialist Professional Certificate</h3>
-            <div class="certificates-grid">
-                <div class="certificate">
-                    <img src="Certificates/IbmIsc2Cybersecurity/ibm-isc2-cybersecurity2.jpg" alt="Certificate 2" class="certificate-photo">
-                    <h3>Introduction to Hardware and Operating Systems</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-                <div class="certificate">
-                    <img src="Certificates/IbmIsc2Cybersecurity/ibm-isc2-cybersecurity1.jpeg" alt="Certificate 2" class="certificate-photo">
-                    <h3>Introduction to Cybersecurity Careers</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Game dev -->
-        <div class="certificate-category">
-            <h3 style="font-size: 1.5rem;">C# Programming for Unity Game Development Specialization</h3>
-            <div class="certificates-grid">
-                <div class="certificate">
-                    <img src="Certificates/GameDev/GameDev1.jpeg" alt="Certificate 2" class="certificate-photo">
-                    <h3>Introduction to C# Programming and Unity</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Meta Database -->
-        <div class="certificate-category">
-            <h3 style="font-size: 1.5rem;">Meta Database Engineer Professional Certificate</h3>
-            <div class="certificates-grid">
-                <div class="certificate">
-                    <img src="Certificates/MetaDB/MetaDB1.jpeg" alt="Certificate 2" class="certificate-photo">
-                    <h3>Introduction to Databases</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Java FullStack -->
-        <div class="certificate-category">
-            <h3 style="font-size: 1.5rem;">Java FullStack Developer Specialization</h3>
-            <div class="certificates-grid">
-                <div class="certificate">
-                    <img src="Certificates/JavaFullstack/javafullstack1.jpeg" alt="Certificate 2" class="certificate-photo">
-                    <h3>Fundamentals of Java Programming</h3>
-                    <p>Coursera, 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Other Certificates Section -->
-        <div class="certificate-category">
-            <h3 style="font-size: 1.5rem;">Other Certificates</h3>
-            <div class="certificates-grid">
-                <div class="certificate">
-                    <img src="Certificates/Others/iiuccps-bootcamp-mentor.jpg" alt="Certificate 1" class="certificate-photo">
-                    <h3>Mentorship</h3>
-                    <p>IIUCCPS, 2023</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target = "_blank"><button type="submit">Send</button></a>
-            <br><br>
-            <p>This thing doesn't work hehe.</p>
-        </form>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://linkedin.com/in/tameem-ahamed-762585227" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" class="logo-pic">
-                </a>
-                <a href="https://github.com/tameemahamed" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/16021/16021236.png" alt="" class="logo-pic">
-                </a>
-                <a href="https://facebook.com/tameem.ahamed.501" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="" class="logo-pic">
-                </a>
-                <a href="https://www.instagram.com/tameem_ahamed/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png?20200512141346" alt="" class="logo-pic">
-                </a>
-                <a href="https://t.me/tameemahamed" target="_blank">
-                    <img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/telegram-512.png" alt="" class="logo-pic">
-                </a>
-                <a href="https://wa.me/message/CGLL55IACQHIG1?src=qr" target="_blank">
-                    <img src="https://e7.pngegg.com/pngimages/28/331/png-clipart-green-call-icon-whatsapp-logo-whatsapp-text-trademark.png" alt="" class="logo-pic">
-                </a>
-            </div>
-            <br>
-            <p>&copy; 2024 Tameem Ahamed</p><br>
-        </div>
-
-    </footer>
-
-    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
