@@ -151,3 +151,42 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         document.getElementById("contactForm").reset();
     }).catch(error => console.error("Error!", error));
 });
+// Add this to the bottom of your existing main.js
+// Update navigation for new sections
+document.addEventListener('DOMContentLoaded', function() {
+    // Update navigation items
+    const navLinks = document.querySelectorAll('[data-nav-link]');
+    const pages = document.querySelectorAll('[data-page]');
+    
+    // Remove existing Portfolio and Blog page references
+    pages.forEach(page => {
+      if (page.dataset.page === 'portfolio' || page.dataset.page === 'blog') {
+        page.remove();
+      }
+    });
+    
+    // Add event listeners for new sections
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        const targetPage = this.innerHTML.toLowerCase();
+        
+        pages.forEach(page => {
+          if (page.dataset.page === targetPage) {
+            page.classList.add('active');
+            this.classList.add('active');
+          } else {
+            page.classList.remove('active');
+          }
+        });
+        
+        // Remove active class from other nav links
+        navLinks.forEach(otherLink => {
+          if (otherLink !== this) {
+            otherLink.classList.remove('active');
+          }
+        });
+        
+        window.scrollTo(0, 0);
+      });
+    });
+  });
