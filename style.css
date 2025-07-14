@@ -1747,3 +1747,12 @@ textarea.form-input {
     font-weight: var(--fw500);
     margin-bottom: 10px;
   }
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .project-links {
+  margin-top: auto;
+}
